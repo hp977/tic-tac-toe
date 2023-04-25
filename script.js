@@ -11,12 +11,6 @@ const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 
-
-
-
-
-
-
 /*
 We set the inital message to let the players know whose turn it is
 */
@@ -73,7 +67,7 @@ function handleResultValidation() {
     /* Now will check weather there are any values in our game state array
     that are still not populated with a player sign */
 
-    let roundDraw = !gameState.includes[""];
+    let roundDraw = !gameState.includes("");
     if (roundDraw) {
         statusDisplay.innerHTML = drawMessage()
         gameActive = false;
